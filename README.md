@@ -1,5 +1,7 @@
 # UnityCoffeShop
 
+Unity project.
+
 The project contains a little neighborhod and a coffe shop.<br />
 The doors of each house open/close, same as the sliding doors of the coffe shop.<br />
 You can walk inside each house and the coffe shop.<br />
