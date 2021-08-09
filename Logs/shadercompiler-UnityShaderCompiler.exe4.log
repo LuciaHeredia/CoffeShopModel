@@ -2,3 +2,5 @@ Base path: 'C:/Users/lucia/2020.3.13f1/Editor/Data', plugins path 'C:/Users/luci
 Cmd: initializeCompiler
 
 Cmd: shutdown
+
+Quitting shader compiler process
