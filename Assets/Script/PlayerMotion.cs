@@ -8,12 +8,14 @@ public class PlayerMotion : MonoBehaviour
     private CharacterController controller;
     private float rotationAboutX=0, rotationAboutY=90;
     public GameObject PlayerCamera;
+    private AudioSource stepSound;
     
     void Start() // Start is called before the first frame update
     {
         speed = 5;
         angularSpeed = 100;
         controller = GetComponent<CharacterController>();
+        stepSound = GetComponent<AudioSource>();
     }
     
     void Update() // Update is called once per frame
@@ -44,6 +46,12 @@ public class PlayerMotion : MonoBehaviour
         Vector3 motion = new Vector3(dx,dy,dz); // motion is defined in Local coordinates
         motion = transform.TransformDirection(motion); // now motion is in Global coordinates
         controller.Move(motion); // must recieve Vector3 in Globl coordinates
+
+        if(dx<-0.01 || dx>0.01 || dz<-0.01 || dz>0.01)
+        {
+            if(!stepSound.isPlaying)
+                stepSound.Play();
+        }
 
     }
 }

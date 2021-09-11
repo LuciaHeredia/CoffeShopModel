@@ -77,16 +77,6 @@ namespace Unity.Cloud.Collaborate.UserInterface
                 window.RequestFocus(focusTarget);
             }
         }
-
-        void OnDisable()
-        {
-            EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
-            AssemblyReloadEvents.beforeAssemblyReload -= OnBeforeAssemblyReload;
-            AssemblyReloadEvents.afterAssemblyReload -= OnAfterAssemblyReload;
-            m_Provider.UpdatedProjectStatus -= OnUpdatedProjectStatus;
-            m_Models.ForEach(m => m.OnStop());
-        }
-
         void CreateGUI()
         {
             EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
