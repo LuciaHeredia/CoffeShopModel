@@ -7,3 +7,4 @@ In this version a second floor was added, along with stairs, decoration of the s
 It contains also sounds of: footsteps, opening/closing doors, sliding doors, drawers and a cover glass cake.
 
 ![](secondFloor.png)
+![](added.png)
