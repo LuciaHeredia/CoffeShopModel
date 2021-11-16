@@ -1,7 +1,5 @@
 # UnityCoffeShop
 
-Unity project.
-
 Project1 --> branch "master1".<br />
 Project2 --> branch "master2".<br />
 
