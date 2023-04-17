@@ -10,5 +10,5 @@ The main thing in the project is the coffe shop wich is furniched with chairs, t
 
 ![](Preview.png)
 
-## App creation:
+## Game created with:
 * Unity 3D: C#.
